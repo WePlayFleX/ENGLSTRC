@@ -5,16 +5,11 @@ using namespace std;
 
 int main()
 {
-	Distance dist;
+	Distance& dist = *(new Distance);
 
 	dist.getdist();
+
 	dist.showdist();
-
-	Distance* distptr;
-	distptr = new Distance;
-
-	distptr->getdist();
-	distptr->showdist();
 
 	cout << endl;
 
